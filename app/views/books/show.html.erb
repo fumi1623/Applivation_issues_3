@@ -73,7 +73,7 @@
               <% end %>
             </td>
 
-            <td>Comment：<%= @book.book_comments.count %></td>
+            <td>comments：<%= @book.book_comments.count %></td>
 
             <% if @book.user == current_user %>
               <td><%= link_to "Edit", edit_book_path(@book), class: 'btn btn-sm btn-success' %></td>
